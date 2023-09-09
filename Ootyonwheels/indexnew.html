@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Full Width Pics - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />.
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+
+    <style>
+/* Style the user cards */
+.user-card {
+    background-color: #ffffff; /* White background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-bottom: 20px; /* Add space between cards */
+}
+
+.card-header {
+    background-color:#1e5789; /* Dark background color for card headers */
+    color: #ffffff; /* White text color for card headers */
+    border-top-left-radius: 10px; /* Rounded corners for the top left and right of headers */
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.card-block {
+    padding: 20px; /* Add padding inside cards */
+}
+
+.user-image img {
+     width: 100%; 
+    max-height: 200px; /* Set a maximum height for user images */
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px; /* Rounded image corners */
+}
+/* Zoom-in effect for images on hover */
+.image-zoom {
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.image-zoom:hover {
+    transform: scale(1.02); /* Zoom in by 10% on hover */
+}
+.f-w-600 {
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.card h6 {
+    color: #333333; /* Dark text color for card titles */
+    font-weight: bold;
+}
+
+.card p.text-muted {
+    color: #666666; /* Slightly darker text color for descriptions */
+}
+
+/* Style the list of activity levels */
+.activity-leval li.active {
+    background-color: #ffc107; /* Yellow background for active levels */
+}
+
+/* Style the counter block */
+.counter-block {
+    background-color: #f7f7f7; /* Light background color for counters */
+}
+
+.counter-block i {
+    font-size: 24px; /* Increase icon size */
+    color: #333333; /* Dark color for icons */
+}
+
+/* Style the social links */
+.user-social-link {
+    margin-top: 10px; /* Add space above social links */
+}
+
+.user-social-link a {
+    font-size: 24px; /* Increase icon size */
+    margin-right: 10px; /* Add space between social links */
+}
+
+/* Add a hover effect to social links */
+.user-social-link a:hover {
+    color: #ffc107; /* Yellow color on hover */
+}
+/* Add padding to the main content */
+.main {
+    padding: 20px;
+}
+/* Style the dark mode switch */
+.dark-mode-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Customize the appearance of the switch */
+.dark-mode-switch .switch-input:checked + .switch-label::before {
+    background-color: #ffc107; /* Yellow color when dark mode is active */
+}
+/* Style for the Enquire button */
+.btn-enquire {
+    background-color:  #1e5789;; /* Primary button color */
+    color: #FFFFFF; /* Text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding to the button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Add a subtle hover effect */
+}
+
+.btn-enquire:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+/*colour price*/
+
+.price {
+color: #1e5789;
+ font-weight: bold;
+}
+.unit{
+    color: #1e5789;
+ font-weight: bold;
+}
+/*font styles */
+
+
+        .custom-font2 {
+            font-family: "Verdana", sans-serif; /* Change to your desired font family */
+            font-size: 16px; /* Change to your desired font size */
+            font-style: italic; /* Change to your desired font style */
+            color: #888; /* Change to your desired text color */
+        }
+
+.custom-icon {
+    color: #FF5733;
+    font-size: 15px; /* Adjust the font size as needed */
+    width: 20px; /* Adjust the width as needed */
+    height: 18px; /* Adjust the height as needed */
+}
+
+
+
+ </style>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Discovering Ooty</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
+            <div class="text-center my-5" style="padding-top: 10px;">
+                <img class="img-fluid rounded-circle mb-4" src="img/ct1.avif" style="width: 350px; height: 200px;" alt="..." />
+                <h1 class="text-white fs-3 fw-bolder">Charming Hill Station </h1>
+              <!--  <p class="text-white-50 mb-0">Landing Page Template</p>-->
+            </div>
+        </header>
+        <!-- Content  card-section-->
+        <section class="py-5">
+
+
+
+
+            <div class="container">
+    <div class="row">
+        <!--cured 1111111----->
+        <div class="col-md-4">
+            <div class="card user-card">
+                <div class="card-header">
+                    <h5>Sightseeing Packages</h5>
+                </div>
+                <div class="card-block">
+                    <div class="user-image">
+                     <!--   <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-radius" alt="User-Profile-Image">-->
+                     <img src="img/co1.jpg" alt="" class="image-zoom">
+                    </div>
+                    <h6 class="f-w-600 m-t-25 m-b-10" style="color: #1e5789;">Hatchbacks</h6>
+
+                    <p class="text-muted">Ooty City Tour</p>
+                     <span class="text-muted">Starts From</span>
+                   <span class="price">1,800</span>
+
+                  <span class="unit">/-</span>
+                    <hr>
+                   
+                    <ul class="list-unstyled activity-leval">
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+         <div class="bg-c-yellow counter-block m-t-10 p-20">
+<div class="row">
+    <div class="col-4">
+        <ul class="list-unstyled list-inline">
+            <li>
+                <i class="fas fa-ship custom-icon" style="color: #FF5733;"></i>
+                Boat House
+            </li>
+             <li>
+                <i class="fas fa-leaf custom-icon" style="color: #FF5733;"></i>
+                Tea Factory
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-4">
+        <ul class="list-unstyled list-inline">
+            <li>
+                <i class="fas fa-tree custom-icon" style="color: #FF5733;"></i>
+                Pyara lake
+            </li>
+              <li>
+                <i class="fas fa-sun custom-icon" style="color: #FF5733;"></i>
+                 Resort <!-- New icon and text -->
+            </li>
+        </ul>
+    </div>
+</div>
+
+</div>
+       
+                     <p class="m-t-15 custom-font2">Experience the convenience and comfort of our Ooty cab services as you explore the picturesque landscapes and charming attractions of Ooty, ensuring a memorable journey from start to finish.</p>
+
+                    <hr>
+                   <!-- <div class="row justify-content-center user-social-link">
+                        <div class="col-auto"><a href="#!"><i class="fa fa-facebook text-facebook"></i></a></div>
+                        <div class="col-auto"><a href="#!"><i class="fa fa-twitter text-twitter"></i></a></div>
+                        <div class="col-auto"><a href="#!"><i class="fa fa-dribbble text-dribbble"></i></a></div>
+                    </div>-->
+                <!-- <div class="service-price">
+                    <span>
+                    Starts From <i class="input-icon field-icon fa"><svg width="10px" height="16px" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
+                <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+                <!-- ... (SVG path and other elements) ... -->
+                 <!--</svg></i>
+                 </span>
+                   <span class="price">1,800</span>
+                  <span class="unit">/-</span>
+                </div>-->
+                              <!-- Enquire Button with Styling -->
+        <div class="text-center m-t-15">
+            <button class="btn btn-primary btn-enquire">Enquire Now</button>
+        </div>
+                </div>
+       
+
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card user-card">
+                <div class="card-header">
+                    <h5> Coimbatore to Ooty</h5>
+                </div>
+                <div class="card-block">
+                    <div class="user-image">
+                        <img src="img/co2.jpg" alt="" class="image-zoom">
+                    </div>
+              <h6 class="f-w-600 m-t-25 m-b-10" style="color: #1e5789;">Hatchbacks</h6>
+
+                    <p class="text-muted">Ooty City Tour</p>
+                    <span class="text-muted">Starts From</span>
+                   <span class="price">800</span>
+
+                  <span class="unit">/-</span>
+                    <hr>
+                   
+                    <ul class="list-unstyled activity-leval">
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+<div class="bg-c-yellow counter-block m-t-10 p-20">
+ <div class="row">
+    <div class="col-4">
+        <ul class="list-unstyled list-inline">
+            <li>
+                <i class="fas fa-ship custom-icon" style="color: #FF5733;"></i>
+                Boat House
+            </li>
+             <li>
+                <i class="fas fa-leaf custom-icon" style="color: #FF5733;"></i>
+                Tea Factory
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-4">
+        <ul class="list-unstyled list-inline">
+            <li>
+                <i class="fas fa-tree custom-icon" style="color: #FF5733;"></i>
+                Pyara lake
+            </li>
+              <li>
+                <i class="fas fa-sun custom-icon" style="color: #FF5733;"></i>
+                 Resort <!-- New icon and text -->
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+                    <p class="m-t-15 custom-font2">Embark on a scenic journey through the lush green valleys and rolling hills of Ooty with our comfortable and efficient Ooty train services, making your travel experience truly unforgettable.</p>
+                    <hr>
+                  <!--  <div class="row justify-content-center user-social-link">
+                        <div class="col-auto"><a href="#!"><i class="fa fa-facebook text-facebook"></i></a></div>
+                        <div class="col-auto"><a href="#!"><i class="fa fa-twitter text-twitter"></i></a></div>
+                        <div class="col-auto"><a href="#!"><i class="fa fa-dribbble text-dribbble"></i></a></div>
+                    </div>-->
+                            <div class="service-price">
+                   <!-- <span>
+                    Starts From <i class="input-icon field-icon fa"><svg width="10px" height="16px" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
+                <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+                <!-- ... (SVG path and other elements) ... -->
+                 <!--</svg></i>
+                 </span>
+                   <span class="price">800</span>
+                  <span class="unit">/-</span>-->
+                    <div class="text-center m-t-15">
+                      <button class="btn btn-primary btn-enquire">Enquire Now</button>
+                     </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card user-card">
+                <div class="card-header">
+                    <h5>Family Tour Packages</h5>
+                </div>
+                <div class="card-block">
+                    <div class="user-image">
+                        <img src="img/co3.jpg" alt="" class="image-zoom">
+                    </div>
+                    <h6 class="f-w-600 m-t-25 m-b-10" style="color: #1e5789;">Hatchbacks</h6>
+
+                    <p class="text-muted">Ooty City Tour</p>
+                    <span class="text-muted">Starts From</span>
+                   <span class="price">8,800</span>
+                    <span class="unit">/-</span>
+                    <hr>
+                   
+                    <ul class="list-unstyled activity-leval">
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+  <div class="bg-c-yellow counter-block m-t-10 p-20">
+<div class="row">
+    <div class="col-4">
+        <ul class="list-unstyled list-inline">
+            <li>
+                <i class="fas fa-ship custom-icon" style="color: #FF5733;"></i>
+                Boat House
+            </li>
+             <li>
+                <i class="fas fa-leaf custom-icon" style="color: #FF5733;"></i>
+                Tea Factory
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-4">
+        <ul class="list-unstyled list-inline">
+            <li>
+                <i class="fas fa-tree custom-icon" style="color: #FF5733;"></i>
+                Pyara lake
+            </li>
+              <li>
+                <i class="fas fa-sun custom-icon" style="color: #FF5733;"></i>
+                 Resort <!-- New icon and text -->
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
+                    <p class="m-t-15 custom-font2">Experience the convenience and speed of our Ooty flight services, ensuring you reach your destination in style and comfort while enjoying the breathtaking aerial views of this picturesque hill station.</p>
+                    <hr>
+                  <!--  <div class="row justify-content-center user-social-link">
+                        <div class="col-auto"><a href="#!"><i class="fa fa-facebook text-facebook"></i></a></div>
+                        <div class="col-auto"><a href="#!"><i class="fa fa-twitter text-twitter"></i></a></div>
+                        <div class="col-auto"><a href="#!"><i class="fa fa-dribbble text-dribbble"></i></a></div>
+                    </div>-->
+                            <div class="service-price">
+                   <!-- <span>
+                    Starts From <i class="input-icon field-icon fa"><svg width="10px" height="16px" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
+                <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+                <!-- ... (SVG path and other elements) ... -->
+                <!-- </svg></i>
+                 </span>
+                   <span class="price">2,500</span>
+                  <span class="unit">/-</span>-->
+                   <div class="text-center m-t-15">
+                          <button class="btn btn-primary btn-enquire">Enquire Now</button>
+                     </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+
+  </div>
+
+
+
+
+
+<br>
+
+
+
+
+</div>
+        </section>
+       
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container" style="padding-bottom: 15px"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
